@@ -1,14 +1,13 @@
-/** @type {import('tailwindcss').Config} */
+/** @type {import('tailwindcss').Config} */ 
 module.exports = {
-  _content: ["./src/**/*.{html,js}"],
-  get content() {
-    return this._content;
-  },
-  set content(value) {
-    this._content = value;
-  },
+  content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        'poppins':'Poppins',
+        'monster':'Montserrat'
+      }
+    },
   },
   plugins: [],
 }
